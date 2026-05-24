@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Extended Methods & Materials",
+    "section": "",
+    "text": "Welcome to the extended methods document for our poster presentation. Because scientific posters are best designed to focus on visual results and overarching conclusions, we have offloaded the dense methodological details, pipeline parameters, and full cohort statistics to this webpage."
+  },
+  {
+    "objectID": "index.html#inclusion-exclusion-criteria",
+    "href": "index.html#inclusion-exclusion-criteria",
+    "title": "Extended Methods & Materials",
+    "section": "2.1 1.1 Inclusion & Exclusion Criteria",
+    "text": "2.1 1.1 Inclusion & Exclusion Criteria\n\nList inclusion criteria here.\nList exclusion criteria here."
+  },
+  {
+    "objectID": "index.html#freesurfer-pipeline",
+    "href": "index.html#freesurfer-pipeline",
+    "title": "Extended Methods & Materials",
+    "section": "3.1 2.1 Freesurfer Pipeline",
+    "text": "3.1 2.1 Freesurfer Pipeline\nWe utilized FreeSurfer v7.3.2 to extract cortical thickness and subcortical volumes. Specifically, the following flags were applied: recon-all -all -s {subject_id} -qcache -measure thickness -fwhm 15"
+  },
+  {
+    "objectID": "index.html#quality-control-qc",
+    "href": "index.html#quality-control-qc",
+    "title": "Extended Methods & Materials",
+    "section": "3.2 2.2 Quality Control (QC)",
+    "text": "3.2 2.2 Quality Control (QC)\nAll scans were visually inspected using the ENIGMA QC protocols. Scans with excessive motion artifacts or failed surface segmentations were excluded."
+  },
+  {
+    "objectID": "index.html#vertex-wise-glms",
+    "href": "index.html#vertex-wise-glms",
+    "title": "Extended Methods & Materials",
+    "section": "4.1 3.1 Vertex-wise GLMs",
+    "text": "4.1 3.1 Vertex-wise GLMs\nVertex-wise general linear models (GLMs) were conducted using BrainStat. The primary model tested for main effects of diagnosis and interactions with aggression. * Equation: Thickness ~ Diagnosis * Aggression + Age + Sex + Site * Thresholding: Random Field Theory (RFT) cluster-level correction (p &lt; 0.05)."
+  },
+  {
+    "objectID": "index.html#subcortical-volumes",
+    "href": "index.html#subcortical-volumes",
+    "title": "Extended Methods & Materials",
+    "section": "4.2 3.2 Subcortical Volumes",
+    "text": "4.2 3.2 Subcortical Volumes\nVolumetric analysis was performed using standard linear regression, correcting for Intracranial Volume (ICV)."
+  }
+]
