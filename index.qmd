@@ -17,7 +17,7 @@ format:
 
 Welcome to the extended methods document for our poster presentation. Because scientific posters are best designed to focus on visual results and overarching conclusions, we have offloaded the dense methodological details, pipeline parameters, and full cohort statistics to this webpage.
 
-# 1. Study Cohorts and Demographics
+# Study Cohorts and Demographics
 
 Provide a detailed breakdown of the cohorts here. This is a great place to include large tables that would otherwise clutter a physical poster.
 
@@ -27,32 +27,32 @@ Provide a detailed breakdown of the cohorts here. This is a great place to inclu
 # data %>% tbl_summary(by = group)
 ```
 
-## 1.1 Inclusion & Exclusion Criteria
+## Inclusion & Exclusion Criteria
 * List inclusion criteria here.
 * List exclusion criteria here.
 
-# 2. Imaging Acquisition & Processing
+# Imaging Acquisition & Processing
 
 Describe the MRI scanner settings, sequences, and quality control steps.
 
-## 2.1 Freesurfer Pipeline
+## Freesurfer Pipeline
 We utilized FreeSurfer v7.3.2 to extract cortical thickness and subcortical volumes. Specifically, the following flags were applied:
 `recon-all -all -s {subject_id} -qcache -measure thickness -fwhm 15`
 
-## 2.2 Quality Control (QC)
+## Quality Control (QC)
 All scans were visually inspected using the ENIGMA QC protocols. Scans with excessive motion artifacts or failed surface segmentations were excluded.
 
-# 3. Statistical Analysis
+# Statistical Analysis
 
-## 3.1 Vertex-wise GLMs
+## Vertex-wise GLMs
 Vertex-wise general linear models (GLMs) were conducted using `BrainStat`. The primary model tested for main effects of diagnosis and interactions with aggression.
 * **Equation:** `Thickness ~ Diagnosis * Aggression + Age + Sex + Site`
 * **Thresholding:** Random Field Theory (RFT) cluster-level correction (p < 0.05).
 
-## 3.2 Subcortical Volumes
+## Subcortical Volumes
 Volumetric analysis was performed using standard linear regression, correcting for Intracranial Volume (ICV).
 
-# 4. Genetics & Transcriptomics
+# Genetics & Transcriptomics
 
 If your poster includes genetic data, detail the GWAS data sources, PRS calculations, or gene expression datasets (e.g., AHBA) used for enrichment analysis.
 
